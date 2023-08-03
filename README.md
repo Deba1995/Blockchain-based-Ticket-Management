@@ -77,11 +77,15 @@ step 8:Initialising bootnode with genesis.Run" Inisializing_nodes_with_genesis.t
 step 9:String Node.Refer "Starting node.txt".Chage public DNS before execution
 
 
-###########################meta mass configuraion############################
+########################### meta mass configuraion############################
 step 1 :Install extension on browser
+
 step 2: login to wallet
+
 step 3:add network(Provide airline server public IP and Chnain ID(76124)
+
 step 4:link import provate keys from "Public address & Provet Keys.txt"
+
 step 5:Choose Enviorment as Injected Web
 
 
