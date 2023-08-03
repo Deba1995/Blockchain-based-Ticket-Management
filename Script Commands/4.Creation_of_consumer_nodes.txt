@@ -1,0 +1,91 @@
+
+						    Creating Clients acoounts
+
+							NODE-1 CREATION
+============================================================================================================================
+mkdir Consumer
+cd Consumer/
+Consumer$ mkdir node1
+Consumer$ cd node1/
+/Consumer/node1$ geth --datadir ./data account new
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Password:qwerty@12345
+Repeat password:qwerty@12345
+
+Your new key was generated
+
+Public address of the key:   0x74eFe1596b06125B373314bc42aC0Aef4C5b6a12
+Path of the secret key file: data/keystore/UTC--2022-06-15T17-39-52.340969262Z--74efe1596b06125b373314bc42ac0aef4c5b6a12
+
+- You can share your public address with anyone. Others need it to interact with you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+
+							NODE-2 CREATION
+=============================================================================================================================
+/Consumer/node1$ cd ..
+/Consumer$ mkdir node2
+/Consumer$ cd node2
+/Consumer/node2$ geth --datadir ./data account new
+INFO [06-02|14:35:09.654] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [06-02|14:35:09.656] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Password:qwerty@12345
+Repeat password:qwerty@12345
+
+Your new key was generated
+
+Public address of the key:   0x6Ed22e66b1968E8E41D624F00f90dE9E95C5ecb3
+Path of the secret key file: data/keystore/UTC--2022-06-15T17-40-29.675479858Z--6ed22e66b1968e8e41d624f00f90de9e95c5ecb3
+
+- You can share your public address with anyone. Others need it to interact with you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+
+						    	NODE-3 CREATION
+==============================================================================================================================
+/Consumer/node2$ cd ..
+/Consumer$ mkdir node3
+/Consumer$ cd node3
+/Consumer/node3$ geth --datadir ./data account new
+INFO [06-02|14:44:17.473] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [06-02|14:44:17.473] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Password:qwerty@12345
+Repeat password:qwerty@12345
+
+Your new key was generated
+
+Public address of the key:   0xc030949dF80bF996eE8509593B460c995370C8Fc
+Path of the secret key file: data/keystore/UTC--2022-06-15T17-41-05.652259193Z--c030949df80bf996ee8509593b460c995370c8fc
+
+- You can share your public address with anyone. Others need it to interact with you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+/Consumer/node3$ cd ..
+
+							NODE-4 CREATION
+===============================================================================================================================
+/Consumer$ mkdir node4
+/Consumer$ cd node4
+/Consumer/node4$ geth --datadir ./data account new
+INFO [06-02|14:46:03.645] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [06-02|14:46:03.645] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Password:qwerty@12345
+Repeat password:qwerty@12345
+
+Your new key was generated
+
+Public address of the key:   0x6E8536d185e35E3Bf0F0E41fa614a10503E0CA3F
+Path of the secret key file: data/keystore/UTC--2022-06-15T17-41-34.622627073Z--6e8536d185e35e3bf0f0e41fa614a10503e0ca3f
+
+- You can share your public address with anyone. Others need it to interact with you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+
+

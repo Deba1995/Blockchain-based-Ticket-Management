@@ -1,0 +1,21 @@
+~/Airline$cd node1
+~/Airline/node1$geth --datadir ./data init ../eagleairline.json
+~/Airline$cd ..
+
+~/Airline$cd node2
+~/Airline/node2$geth --datadir ./data init ../eagleairline.json
+
+~/Consumer$cd node1
+~/Consumer/node1$geth --datadir ./data init ../eagleairline.json
+~/Consumer$cd ..
+
+~/Consumer$cd node2
+~/Consumer/node2$geth --datadir ./data init ../eagleairline.json
+~/Consumer$cd ..
+
+~/Consumer$cd node3
+~/Consumer/node3$geth --datadir ./data init ../eagleairline.json
+~/Consumer$cd ..
+
+~/Consumer$cd node4
+~/Consumer/node4$geth --datadir ./data init ../eagleairline.json

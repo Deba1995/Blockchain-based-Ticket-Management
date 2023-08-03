@@ -1,0 +1,67 @@
+ubuntu@ip-172-31-25-183:~/Airlines$ puppeth
++-----------------------------------------------------------+
+| Welcome to puppeth, your Ethereum private network manager |
+|                                                           |
+| This tool lets you create a new Ethereum network down to  |
+| the genesis block, bootnodes, miners and ethstats servers |
+| without the hassle that it would normally entail.         |
+|                                                           |
+| Puppeth uses SSH to dial in to remote servers, and builds |
+| its network components out of Docker containers using the |
+| docker-compose toolset.                                   |
++-----------------------------------------------------------+
+
+Please specify a network name to administer (no spaces, hyphens or capital letters please)
+> eagleairline
+
+Sweet, you can set this via --network=eagleairlines next time!
+
+INFO [06-04|10:22:19.301] Administering Ethereum network           name=eagleairline
+WARN [06-04|10:22:19.302] No previous configurations found         path=/home/ubuntu/.puppeth/eagleairline
+
+What would you like to do? (default = stats)
+ 1. Show network stats
+ 2. Configure new genesis
+ 3. Track new remote server
+ 4. Deploy network components
+> 2
+
+What would you like to do? (default = create)
+ 1. Create new genesis from scratch
+ 2. Import already existing genesis
+> 1
+
+Which consensus engine to use? (default = clique)
+ 1. Ethash - proof-of-work
+ 2. Clique - proof-of-authority
+> 2
+
+How many seconds should blocks take? (default = 15)
+> 10
+
+Which accounts are allowed to seal? (mandatory at least one)
+> 0xDa3F8B73079a9572C3f6580d2fF1aabbEd2C1A9a
+> 0x05F2AD8520D5d41B2F930d35a26DCe912f0EE6b3
+> 0x
+
+Which accounts should be pre-funded? (advisable at least one)
+> 0xDa3F8B73079a9572C3f6580d2fF1aabbEd2C1A9a
+> 0x05F2AD8520D5d41B2F930d35a26DCe912f0EE6b3
+> 0x74eFe1596b06125B373314bc42aC0Aef4C5b6a12
+> 0x6Ed22e66b1968E8E41D624F00f90dE9E95C5ecb3
+> 0xc030949dF80bF996eE8509593B460c995370C8Fc
+> 0x6E8536d185e35E3Bf0F0E41fa614a10503E0CA3F
+> 0x
+
+Should the precompile-addresses be pre-funded with 1 wei? (advisable yes)
+> yes
+
+Specify your chain/network ID if you want an explicit one (default = random)
+> 76124
+INFO [06-04|10:26:09.471] Configured new genesis block
+
+
+
+
+
+	

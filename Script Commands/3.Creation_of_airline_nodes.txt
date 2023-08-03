@@ -1,0 +1,58 @@
+							       Creating Mining accounts
+
+								NODE-1 CREATION (MINER)
+===============================================================================================================================
+mkdir Airline
+cd Airline/
+/Airline$ mkdir node1
+~/Airline$ mkdir node2
+~/Airline$
+~/Airline$
+~/Airline$ cd node1
+~/Airline/node1$
+~/Airline/node1$
+~/Airline/node1$
+~/Airline/node1$
+~/Airline/node1$ geth --datadir ./data account new
+INFO [06-04|06:36:07.447] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [06-04|06:36:07.447] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Password:abcdef@12345
+Repeat password:abcdef@12345
+
+Your new key was generated
+
+Public address of the key:   0xDa3F8B73079a9572C3f6580d2fF1aabbEd2C1A9a
+Path of the secret key file: data/keystore/UTC--2022-06-15T17-47-26.309384755Z--da3f8b73079a9572c3f6580d2ff1aabbed2c1a9a
+
+- You can share your public address with anyone. Others need it to interact with you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+
+							    NODE-2 CREATION  (MINER)
+==================================================================================================================================
+
+~/Airline$ cd node2
+~/Airline/node2$
+~/Airline/node2$
+~/Airline/node2$
+~/Airline/node2$
+~/Airline/node2$
+~/Airline/node2$ geth --datadir ./data account new
+INFO [06-04|06:45:05.753] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [06-04|06:45:05.753] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+Your new account is locked with a password. Please give a password. Do not forget this password.
+Password:abcdef@12345
+Repeat password:abcdef@12345
+
+Your new key was generated
+Public address of the key:   0x05F2AD8520D5d41B2F930d35a26DCe912f0EE6b3
+Path of the secret key file: data/keystore/UTC--2022-06-15T17-48-07.877123661Z--05f2ad8520d5d41b2f930d35a26dce912f0ee6b3
+
+- You can share your public address with anyone. Others need it to interact with you.
+- You must NEVER share the secret key with anyone! The key controls access to your funds!
+- You must BACKUP your key file! Without the key, it's impossible to access account funds!
+- You must REMEMBER your password! Without the password, it's impossible to decrypt the key!
+
+=====================================================================================================================================

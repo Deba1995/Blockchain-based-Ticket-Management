@@ -1,0 +1,5 @@
+			Starting Bootnodes
+
+bootnode -nodekey ./boot.key -verbosity 7 -addr 172.31.94.12:30301
+
+bootnode -nodekey ./boot.key -verbosity 7 -addr 172.31.88.86:30301

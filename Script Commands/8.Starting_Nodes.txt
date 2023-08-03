@@ -1,0 +1,26 @@
+networkId: 76124
+===============================================================================
+
+bootnode -nodekey ./boot.key -verbosity 7 -addr 172.31.94.12:30301
+bootnode -nodekey ./boot.key -verbosity 7 -addr 172.31.88.86:30301
+
+===============================================================================
+
+bootnode1: enode://d72bbd1dd31fcff4720633d1a5f87927ad71978a7a7f42ff2512e4f9911818908fa7268becc813c0f084ba9c682380f1001394fed0cfe0b79a937d92eed2502b@172.31.88.86:0?discport=30301
+bootnode2: enode://ed4cdd4a0144d3d38ef297b8930eed7f37b49dc7c812de44d96adf3e5f92fd40408093ced505b060e42b3f39610b1ee0001d36bf920b78cb7155ec3cbacb72d0@172.31.94.12:0?discport=30301
+==================================================================================================================================================================================
+
+==================================================================================================================================================================================
+
+                                        Start Airlines Nodes
+
+geth --networkid 76124 --datadir ./data --bootnodes enode://ed4cdd4a0144d3d38ef297b8930eed7f37b49dc7c812de44d96adf3e5f92fd40408093ced505b060e42b3f39610b1ee0001d36bf920b78cb7155ec3cbacb72d0@172.31.94.12:0?discport=30301,enode://d72bbd1dd31fcff4720633d1a5f87927ad71978a7a7f42ff2512e4f9911818908fa7268becc813c0f084ba9c682380f1001394fed0cfe0b79a937d92eed2502b@172.31.88.86:0?discport=30301 --port 30303 --ipcdisable --syncmode "full"  --http --allow-insecure-unlock -http.corsdomain "*" --http.addr ec2-52-87-157-2.compute-1.amazonaws.com --http.port 8545 --unlock "0xDa3F8B73079a9572C3f6580d2fF1aabbEd2C1A9a" --password password.txt --mine console
+geth --networkid 76124 --datadir ./data --bootnodes enode://ed4cdd4a0144d3d38ef297b8930eed7f37b49dc7c812de44d96adf3e5f92fd40408093ced505b060e42b3f39610b1ee0001d36bf920b78cb7155ec3cbacb72d0@172.31.94.12:0?discport=30301,enode://d72bbd1dd31fcff4720633d1a5f87927ad71978a7a7f42ff2512e4f9911818908fa7268becc813c0f084ba9c682380f1001394fed0cfe0b79a937d92eed2502b@172.31.88.86:0?discport=30301 --port 30304 --ipcdisable --syncmode "full"  --http --allow-insecure-unlock -http.corsdomain "*" --http.addr ec2-52-87-157-2.compute-1.amazonaws.com --http.port 8546 --unlock "0x05F2AD8520D5d41B2F930d35a26DCe912f0EE6b3" --password password.txt --mine console
+
+===================================================================================================================================================================================
+                                        Start Consumer Nodes
+
+geth --networkid 76124 --datadir ./data --bootnodes enode://d72bbd1dd31fcff4720633d1a5f87927ad71978a7a7f42ff2512e4f9911818908fa7268becc813c0f084ba9c682380f1001394fed0cfe0b79a937d92eed2502b@172.31.88.86:0?discport=30301,enode://ed4cdd4a0144d3d38ef297b8930eed7f37b49dc7c812de44d96adf3e5f92fd40408093ced505b060e42b3f39610b1ee0001d36bf920b78cb7155ec3cbacb72d0@172.31.94.12:0?discport=30301 --port 30303 --ipcdisable --syncmode "full"  --http --allow-insecure-unlock -http.corsdomain "*" --http.addr ec2-35-174-113-30.compute-1.amazonaws.com --http.port 8545 --unlock "0x74eFe1596b06125B373314bc42aC0Aef4C5b6a12" --password password.txt console
+geth --networkid 76124 --datadir ./data --bootnodes enode://d72bbd1dd31fcff4720633d1a5f87927ad71978a7a7f42ff2512e4f9911818908fa7268becc813c0f084ba9c682380f1001394fed0cfe0b79a937d92eed2502b@172.31.88.86:0?discport=30301,enode://ed4cdd4a0144d3d38ef297b8930eed7f37b49dc7c812de44d96adf3e5f92fd40408093ced505b060e42b3f39610b1ee0001d36bf920b78cb7155ec3cbacb72d0@172.31.94.12:0?discport=30301 --port 30304 --ipcdisable --syncmode "full"  --http --allow-insecure-unlock -http.corsdomain "*" --http.addr ec2-35-174-113-30.compute-1.amazonaws.com --http.port 8546 --unlock "0x6Ed22e66b1968E8E41D624F00f90dE9E95C5ecb3" --password password.txt console
+geth --networkid 76124 --datadir ./data --bootnodes enode://d72bbd1dd31fcff4720633d1a5f87927ad71978a7a7f42ff2512e4f9911818908fa7268becc813c0f084ba9c682380f1001394fed0cfe0b79a937d92eed2502b@172.31.88.86:0?discport=30301,enode://ed4cdd4a0144d3d38ef297b8930eed7f37b49dc7c812de44d96adf3e5f92fd40408093ced505b060e42b3f39610b1ee0001d36bf920b78cb7155ec3cbacb72d0@172.31.94.12:0?discport=30301 --port 30305 --ipcdisable --syncmode "full"  --http --allow-insecure-unlock -http.corsdomain "*" --http.addr ec2-35-174-113-30.compute-1.amazonaws.com --http.port 8547 --unlock "0xc030949dF80bF996eE8509593B460c995370C8Fc" --password password.txt console
+geth --networkid 76124 --datadir ./data --bootnodes enode://d72bbd1dd31fcff4720633d1a5f87927ad71978a7a7f42ff2512e4f9911818908fa7268becc813c0f084ba9c682380f1001394fed0cfe0b79a937d92eed2502b@172.31.88.86:0?discport=30301,enode://ed4cdd4a0144d3d38ef297b8930eed7f37b49dc7c812de44d96adf3e5f92fd40408093ced505b060e42b3f39610b1ee0001d36bf920b78cb7155ec3cbacb72d0@172.31.94.12:0?discport=30301 --port 30306 --ipcdisable --syncmode "full"  --http --allow-insecure-unlock -http.corsdomain "*" --http.addr ec2-35-174-113-30.compute-1.amazonaws.com --http.port 8548 --unlock "0x6E8536d185e35E3Bf0F0E41fa614a10503E0CA3F" --password password.txt console
